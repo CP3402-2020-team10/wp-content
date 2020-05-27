@@ -58,24 +58,17 @@
     text-decoration: underline;
   }
 
-  //active &hover styles
-
-  a:hover,
-  li:hover > a,
-    .current-menu-item >a,
-    .current-menu-ancestor >a{
-      color: $color-active;
-  }
 
   .current_page_item > a,
   .current-menu-item > a,
   .current_page_ancestor > a,
   .current-menu-ancestor > a {
+    color: $color-active;
   }
 
   .menu-item-has-children,
   .page_item_has_children {
-    min-width: 218px;
+    min-width: 50px;
   }
   .menu-item-has-children > a,
   .page_item_has_children > a {

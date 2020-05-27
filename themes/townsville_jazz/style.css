@@ -856,7 +856,7 @@ a:hover, a:active {
   }
 
   .site-branding {
-    width: 35%;
+    width: 20%;
     flex: 1 0 auto;
   }
 
@@ -915,15 +915,15 @@ Header Menu
 .main-navigation a:focus {
   text-decoration: underline;
 }
-.main-navigation a:hover,
-.main-navigation li:hover > a,
+.main-navigation .current_page_item > a,
 .main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a,
 .main-navigation .current-menu-ancestor > a {
   color: #0b044a;
 }
 .main-navigation .menu-item-has-children,
 .main-navigation .page_item_has_children {
-  min-width: 218px;
+  min-width: 50px;
 }
 .main-navigation .menu-item-has-children > a,
 .main-navigation .page_item_has_children > a {
