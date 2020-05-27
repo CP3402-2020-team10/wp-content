@@ -1,0 +1,53 @@
+.widget {
+  margin: 0 0 2em;
+  padding: 0 0 2em;
+  font-family: $font_sans;
+
+  ul,
+  ol {
+    padding: .7em 0 0;
+    margin-bottom: 0;
+    list-style-type: none;
+
+    li {
+      display: block;
+      line-height: 2em;
+
+      ul,
+      ol {
+        margin-left: .5em;
+
+        @media screen and (min-width: 30em) {
+          margin-left: 1em;
+        }
+      }
+
+    }
+  }
+
+  a {
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      border-bottom: 3px solid $extra_color;
+    }
+  }
+
+  /* Make sure select elements fit in widgets. */
+  select {
+    width: 100%;
+    height: 2.5em;
+    padding: 10px;
+    font-family: $font_sans;
+    border: 1px solid #ccc;
+  }
+
+}
+
+.widget-title {
+  margin-top: 0;
+  margin-bottom: .5em;
+  font-size: 1.4em;
+}

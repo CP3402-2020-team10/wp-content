@@ -1,0 +1,21 @@
+//@import "sass/variables-site/typography";
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $color__text-main;
+	font-family: $font_sans;
+	@include font_size(.9);
+	line-height: $font__line-height-body;
+
+	@media screen and (min-width: $query_small){
+		@include font-size(1);
+
+	}
+}
+
+@import "headings";
+@import "copy";
