@@ -774,6 +774,8 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .site-content {
   padding: 1em;
+  margin-inline-start: 12.5%;
+  margin-inline-end: 12.5%;
 }
 @media screen and (min-width: 600px) {
   .site-content {
