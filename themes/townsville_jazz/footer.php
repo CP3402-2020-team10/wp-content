@@ -14,16 +14,18 @@
 <footer id="colophon" class="site-footer" role="contentinfo">
     <nav class="social-menu">
         <?php wp_nav_menu(array('theme_location' => 'social')); ?>
-    </nav>
-        <?php
-        echo date_i18n(_x('Y', 'copyright date format', 'Townsville Jazz Club'));
-        ?>
+    </nav>&copy;
+    <?php
+    echo date_i18n(_x('Y', 'copyright date format', 'Townsville Jazz Club'));
 
-        <?php
-        if (function_exists('the_privacy_policy_link')) {
-            the_privacy_policy_link('', '<span role="separator" aria-hidden="true"></span>');
-        }
-        ?>
+    ?>
+    <a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+
+    <?php
+    if (function_exists('the_privacy_policy_link')) {
+        the_privacy_policy_link('', '<span role="separator" aria-hidden="true"></span>');
+    }
+    ?>
     </div><!-- .site-info -->
 </footer><!-- #colophon -->
 </div><!-- #page -->
