@@ -609,13 +609,13 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #e1e010;
+  color: #0b044a;
 }
 a:visited {
-  color: purple;
+  color: #75cbd2;
 }
 a:hover, a:focus, a:active {
-  color: #32701c;
+  color: #416670;
 }
 a:focus {
   outline: thin dotted;
@@ -911,7 +911,7 @@ Header Menu
   width: 100%;
   padding: 0.5em 1em 0.5em 0;
   text-decoration: none;
-  color: #fff;
+  color: white;
 }
 .main-navigation a:hover,
 .main-navigation a:focus {
@@ -930,6 +930,12 @@ Header Menu
 .main-navigation .menu-item-has-children > a,
 .main-navigation .page_item_has_children > a {
   padding-right: 2em;
+}
+
+.main-navigation ul li:last-child a {
+  background: #004870;
+  border-radius: 8px;
+  border: 2px solid rgba(224, 161, 1, 0.81);
 }
 
 button.dropdown-toggle {
@@ -975,16 +981,16 @@ button.dropdown-toggle {
     display: flex;
     flex-wrap: wrap;
   }
-  .main-navigation ul ul {
+  .main-navigation ul ul, .main-navigation ul ul:last-child {
     flex-direction: column;
     position: absolute;
-    background: #006ef9;
+    background: black;
     margin-left: 0;
   }
-  .main-navigation ul ul li {
+  .main-navigation ul ul li, .main-navigation ul ul:last-child li {
     padding-left: 0;
   }
-  .main-navigation ul ul li a {
+  .main-navigation ul ul li a, .main-navigation ul ul:last-child li a {
     width: 218px;
     background: none;
   }
@@ -1066,7 +1072,7 @@ button.dropdown-toggle {
     border-bottom: 3px solid white;
   }
   .no-sidebar .post-content__wrap .entry-meta a:hover, .no-sidebar .post-content__wrap .entry-meta a:focus {
-    border-bottom-color: #e1e010;
+    border-bottom-color: #0b044a;
   }
   .no-sidebar .post-content__wrap .byline,
 .no-sidebar .post-content__wrap .posted-on,
