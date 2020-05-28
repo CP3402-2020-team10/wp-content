@@ -921,7 +921,7 @@ Header Menu
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a,
 .main-navigation .current-menu-ancestor > a {
-  color: #0b044a;
+  color: #e11e9c;
 }
 .main-navigation .menu-item-has-children,
 .main-navigation .page_item_has_children {
@@ -935,7 +935,6 @@ Header Menu
 .main-navigation ul li:last-child a {
   background: #004870;
   border-radius: 8px;
-  border: 2px solid rgba(224, 161, 1, 0.81);
 }
 
 button.dropdown-toggle {
@@ -998,6 +997,10 @@ button.dropdown-toggle {
     padding: 0.4em 1em;
   }
 }
+.entry-title {
+  display: none;
+}
+
 @media screen and (min-width: 900px) {
   .main-navigation ul {
     justify-content: flex-end;
