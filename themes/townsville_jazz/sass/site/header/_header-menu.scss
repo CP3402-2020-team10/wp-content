@@ -81,7 +81,6 @@
 .main-navigation ul li:last-child a {
   background: $cta__color;
   border-radius: 8px;
-  border: 2px solid $cta__border__color;
 }
 
 
@@ -159,6 +158,11 @@ button.dropdown-toggle {
 
   }
 
+}
+
+
+.entry-title {
+  display: none;
 }
 
 @media screen and (min-width: $query_medium) {
