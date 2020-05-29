@@ -1,4 +1,4 @@
-# Townsville Jazz Club Theme - (..themes/townsville_jazz)
+# Townsville Jazz Club Theme
 
 ## Colour Palette Variables
 * _colors.scss - Set variables names for specific colours/colour palettes
