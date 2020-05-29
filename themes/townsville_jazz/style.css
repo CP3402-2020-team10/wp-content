@@ -609,13 +609,13 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #e1e010;
+  color: #0b044a;
 }
 a:visited {
-  color: purple;
+  color: #00d205;
 }
 a:hover, a:focus, a:active {
-  color: #32701c;
+  color: #416670;
 }
 a:focus {
   outline: thin dotted;
@@ -774,6 +774,8 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .site-content {
   padding: 1em;
+  margin-inline-start: 12.5%;
+  margin-inline-end: 12.5%;
 }
 @media screen and (min-width: 600px) {
   .site-content {
@@ -909,7 +911,7 @@ Header Menu
   width: 100%;
   padding: 0.5em 1em 0.5em 0;
   text-decoration: none;
-  color: #fff;
+  color: white;
 }
 .main-navigation a:hover,
 .main-navigation a:focus {
@@ -919,7 +921,7 @@ Header Menu
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a,
 .main-navigation .current-menu-ancestor > a {
-  color: #0b044a;
+  color: #e11e9c;
 }
 .main-navigation .menu-item-has-children,
 .main-navigation .page_item_has_children {
@@ -928,6 +930,11 @@ Header Menu
 .main-navigation .menu-item-has-children > a,
 .main-navigation .page_item_has_children > a {
   padding-right: 2em;
+}
+
+.main-navigation ul li:last-child a {
+  background: #004870;
+  border-radius: 8px;
 }
 
 button.dropdown-toggle {
@@ -973,16 +980,16 @@ button.dropdown-toggle {
     display: flex;
     flex-wrap: wrap;
   }
-  .main-navigation ul ul {
+  .main-navigation ul ul, .main-navigation ul ul:last-child {
     flex-direction: column;
     position: absolute;
-    background: #006ef9;
+    background: black;
     margin-left: 0;
   }
-  .main-navigation ul ul li {
+  .main-navigation ul ul li, .main-navigation ul ul:last-child li {
     padding-left: 0;
   }
-  .main-navigation ul ul li a {
+  .main-navigation ul ul li a, .main-navigation ul ul:last-child li a {
     width: 218px;
     background: none;
   }
@@ -990,6 +997,10 @@ button.dropdown-toggle {
     padding: 0.4em 1em;
   }
 }
+.entry-title {
+  display: none;
+}
+
 @media screen and (min-width: 900px) {
   .main-navigation ul {
     justify-content: flex-end;
@@ -1064,7 +1075,7 @@ button.dropdown-toggle {
     border-bottom: 3px solid white;
   }
   .no-sidebar .post-content__wrap .entry-meta a:hover, .no-sidebar .post-content__wrap .entry-meta a:focus {
-    border-bottom-color: #e1e010;
+    border-bottom-color: #0b044a;
   }
   .no-sidebar .post-content__wrap .byline,
 .no-sidebar .post-content__wrap .posted-on,

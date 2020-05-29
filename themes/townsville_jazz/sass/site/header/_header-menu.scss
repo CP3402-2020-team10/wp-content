@@ -50,7 +50,7 @@
     width: 100%;
     padding: .5em 1em .5em 0;
     text-decoration: none;
-    color: #fff;
+    color: $color__light;
   }
 
   a:hover,
@@ -63,18 +63,26 @@
   .current-menu-item > a,
   .current_page_ancestor > a,
   .current-menu-ancestor > a {
-    color: $color-active;
+    color: $color__active;
   }
 
   .menu-item-has-children,
   .page_item_has_children {
     min-width: 50px;
   }
+
   .menu-item-has-children > a,
   .page_item_has_children > a {
     padding-right: 2em;
   }
 }
+
+//CTA -> target last child in menu
+.main-navigation ul li:last-child a {
+  background: $cta__color;
+  border-radius: 8px;
+}
+
 
 button.dropdown-toggle {
   position: absolute;
@@ -96,7 +104,7 @@ button.dropdown-toggle {
   font-size: 80%;
   text-transform: uppercase;
   background: darken($color__skin, 20%);
-  color: white;
+  color: $color__light;
   border: 1px solid hsla(0, 0%, 100%, .3);
 }
 
@@ -124,10 +132,10 @@ button.dropdown-toggle {
       flex-wrap: wrap;
       //position: absolute;
 
-      ul {
+      ul, ul:last-child {
         flex-direction: column;
         position: absolute;
-        background: darken($color__skin, 20%);
+        background: $extra__color;
         margin-left: 0;
 
         li {
@@ -152,6 +160,11 @@ button.dropdown-toggle {
 
 }
 
+
+.entry-title {
+  display: none;
+}
+
 @media screen and (min-width: $query_medium) {
   .main-navigation {
 
@@ -162,8 +175,8 @@ button.dropdown-toggle {
       /* If you want dropdowns to open on hover, uncomment this: */
 
       li:hover > ul,
-          li:focus > ul {
-          display: block;
+      li:focus > ul {
+        display: block;
       }
 
     }
