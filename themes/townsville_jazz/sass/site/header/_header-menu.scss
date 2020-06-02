@@ -79,8 +79,9 @@
 
 //CTA -> target last child in menu
 .main-navigation ul li:last-child a {
-  background: $cta__color;
   border-radius: 8px;
+  background: $cta__color;
+
 }
 
 
@@ -89,7 +90,7 @@ button.dropdown-toggle {
   right: 0;
   border: none;
   //background: darken($color__skin, 30%);
-  color: darken($color__skin, 30%);;
+  color: darken($color__skin, 30%);
   line-height: 1.5em;
   padding: .4em 1em .4em .5em;
 }

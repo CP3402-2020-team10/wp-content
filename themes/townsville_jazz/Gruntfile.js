@@ -31,8 +31,5 @@ module.exports = function(grunt) {
     });
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    // "grunt" is the same as running "grunt sass:dist".
-    // grunt.registerTask('default', ['sass:dist']);
-    // grunt.registerTask('dev', ['sass:dev']);
     grunt.registerTask('default', ['watch']);
 };

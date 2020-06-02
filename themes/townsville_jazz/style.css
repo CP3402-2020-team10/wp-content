@@ -933,8 +933,8 @@ Header Menu
 }
 
 .main-navigation ul li:last-child a {
-  background: #004870;
   border-radius: 8px;
+  background: #004870;
 }
 
 button.dropdown-toggle {
